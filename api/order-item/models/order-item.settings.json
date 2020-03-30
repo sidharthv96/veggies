@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "order_items",
+  "info": {
+    "name": "orderItem"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "product": {
+      "model": "product"
+    },
+    "quantity": {
+      "type": "decimal",
+      "min": 0
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": [
+        "KG",
+        "Gram",
+        "Nos"
+      ]
+    }
+  }
+}

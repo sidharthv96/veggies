@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "flats",
+  "info": {
+    "name": "flat"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "mobile": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    }
+  }
+}

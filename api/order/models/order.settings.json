@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "orders",
+  "info": {
+    "name": "order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "order_items": {
+      "collection": "order-item"
+    },
+    "confirmed": {
+      "type": "boolean"
+    }
+  }
+}
